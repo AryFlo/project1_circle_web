@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menucontainer">
+        <a href="index.html">
+          <img
+            class="logocircle"
+            src="assets/logos/circle.svg"
+            alt="Circle logo"
+          />
+        </a>
+        <button class="menu-toggle">☰</button>
+        <div class="nav-container">
+          <button class="close-menu">✖</button>
+          <a href="index.html" class="link linkactive"> Home </a>
+          <a href="/#recent-projects" class="link"> Projects </a>
+          <a href="/#services" class="link"> Services </a>
+        </div>
+        <a href="contact.html" class="btn1"> Contact Us </a>
+      </nav>
+    </header>
+
+    <section class="contact-section">
+      <form id="contact-form" class="contact-form">
+        <h1>Contact Us</h1>
+        <div class="Name">
+          <label for="full-name">Full Name*</label>
+          <br />
+
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Enter your full name"
+            onblur="validateName()"
+            required
+          />
+          <p id="errorName" hidden class="errorForm">
+            Oops! Did you forget your name?
+          </p>
+          <p id="errorNameIronhack" hidden class="errorForm">You can't be Ironhack — because I *am* Ironhack! 😎</p>
+        </div>
+
+        <div class="email-phone">
+          <div class="email">
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              onblur="validateMail()"
+              required
+            />
+            <p id="errorEmail" hidden class="errorForm">
+              Uh-oh! That email doesn’t look quite right
+            </p>
+           
+          </div>
+
+          <div class="phone">
+            <label for="phone">Phone</label>
+            <br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              onblur="validatePhone()"
+              required
+            />
+            <p id="errorPhone" hidden class="errorForm">
+              Hmm... that doesn't look like a real phone number 
+            </p>
+          </div>
+        </div>
+
+        <div class="message">
+          <label for="message">Message</label>
+          <br />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here ...."
+            onblur="validateMessage()"
+            required
+          ></textarea>
+          <p id="errorMessageUser" hidden="" class="errorForm">
+            That was short and mysterious... Can you say a bit more?
+          </p>
+        </div>
+        
+        <div class="btn-submit">
+          <p id="errorSubmit" hidden class="errorForm">
+            Please complete all fields correctly before submitting.
+        </p>
+          <button type="button" class="button" onclick="SendForm()">
+            Submit
+          </button>
+         
+        </div>
+
+
+
+      </form>
+    </section>
+
+    <div id="modal" >
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">×</span>
+        <img
+        class="logocircle"
+        src="assets/logos/circle.svg"
+        alt="Circle logo"
+      />
+       <br>
+        <h4>Thank you! <br> Your form has been sent successfully!</h4>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img
+            src="assets/logos/circle.svg"
+            class="footer-logo"
+            alt="circle logo"
+          />
+          <p>
+            2972 Westheimer Rd. Santa Ana, <br />
+            Illinois 85486
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <a href="#">Team</a>
+            <a href="#">Services</a>
+            <a href="#">About us</a>
+          </div>
+          <div class="footer-column">
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+ 
+  <script src="js/contact.js"></script>
+  </body>
+</html>
