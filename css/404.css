@@ -1,0 +1,24 @@
+.not-found-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.error-image {
+  width: 50%;
+}
+
+.not-found-container p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+.not-found-container a {
+  text-decoration: none;
+  color: white;
+  background-color: #072ac8;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+.not-found-container a:hover {
+  color: #ffc600;
+}
