@@ -176,6 +176,27 @@ body {
   }
 }
 
+@media (max-width: 768px){
+  .project-detail-section {
+    margin: 50px;
+  }
+
+  .h3projects {
+    margin: 100px 50px 20px;
+    text-align: left;
+  }
+
+  .project-grid {
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .project-card{
+    margin: 0px;
+  }
+}
+
 /* Responsive para móviles */
 @media screen and (max-width: 576px) {
   .project-detail-section {

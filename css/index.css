@@ -419,5 +419,20 @@ html {
 
   .project-grid {
     gap: 10px;
+    display: flex;
+    align-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .project-card {
+    margin: 0px;
   }
 }

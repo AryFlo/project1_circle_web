@@ -116,7 +116,7 @@ body {
 
 .menucontainer {
   font-weight: 500;
-  margin: 20px 0px 0px;
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -154,14 +154,14 @@ body {
   cursor: pointer;
 }
 
-/* Web */
+/* Tablet */
 @media (min-width: 769px) {
   .nav-container {
     display: flex;
   }
 }
 
-/* Tablet */
+/* Web */
 @media (max-width: 1024px) {
   .hero {
     display: flex;
@@ -205,7 +205,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--neutral-dark);
+    background:#072ac8;
     padding: 20px;
     color: #fff;
     font-size: 1.3rem;
